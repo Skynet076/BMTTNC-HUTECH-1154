@@ -51,7 +51,6 @@ class RailFenceCipher:
 
         for _ in range(len(cipher_text)):
             plain_text += rails[rail_index].pop(0)
-            rails[rail_index] = rails[rail_index][1:]
             if rail_index == 0:
                 direction = 1
             elif rail_index == num_rails - 1:
