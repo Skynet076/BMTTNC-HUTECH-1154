@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caesar Cipher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <table class="table">
+            <tr>
+                <td class="text-center font-weight-bold" style="font-size: 25px;">CAESAR CIPHER</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold text-primary">ENCRYPTION / DECRYPTION</td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="POST">
+                        <div class="form-group">
+                            <label>Text:</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                name="text" 
+                                placeholder="Enter text..." 
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label>Key (0-25):</label>
+                            <input 
+                                type="number" 
+                                class="form-control" 
+                                name="key" 
+                                placeholder="Enter key..." 
+                                required 
+                                min="0" max="25"
+                            />
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" name="action" value="encrypt" class="btn btn-primary">Encrypt</button>
+                            <button type="submit" name="action" value="decrypt" class="btn btn-success">Decrypt</button>
+                            <div class="container mt-3">
+    <a href="/" class="btn btn-secondary mb-3">HOME</a>
+</div>
+
+                        </div>
+                    </form>
+
+                    {% if result %}
+                    <div class="alert alert-info mt-3">
+                        <strong>Result:</strong> {{ result }}
+                    </div>
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

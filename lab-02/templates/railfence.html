@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rail Fence Cipher</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <table class="table">
+            <tr>
+                <td class="text-center font-weight-bold" style="font-size: 25px;">RAIL FENCE CIPHER</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold text-primary">ENCRYPTION / DECRYPTION</td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="POST">
+                        <div class="form-group">
+                            <label>Text:</label>
+                            <input type="text" class="form-control" name="text" placeholder="Input text..." required>
+                        </div>
+                        <div class="form-group">
+                            <label>Key (số hàng):</label>
+                            <input type="number" class="form-control" name="key" placeholder="Input key..." required>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" name="action" value="encrypt" class="btn btn-primary">Encrypt</button>
+                            <button type="submit" name="action" value="decrypt" class="btn btn-success">Decrypt</button>
+                            <div class="container mt-3">
+    <a href="/" class="btn btn-secondary mb-3">HOME</a>
+</div>
+
+                        </div>
+                    </form>
+                    {% if result %}
+                    <div class="alert alert-info"><strong>Result:</strong> {{ result }}</div>
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
