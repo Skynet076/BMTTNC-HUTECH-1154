@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành An toàn thông tin nâng cao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/OIP.wE2SX8Fq6JLAaaf93l8vtQHaCY?w=321&h=112&c=7&r=0&o=5&pid=1.7" 
+             alt="hutech" 
+             style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
+        <h4 style="font-weight: bold; text-align: center;">BÀI THỰC HÀNH KẾT THÚC MÔN HỌC : THBMTTNC </h4>
+        <h4 style="font-weight: bold; text-align: center;">LeNguyenGiaHuy 2280601154 GG! </h4>
+        <ul style="margin-top: 30px; font-size: 18px;">
+            <li><a href="#" onclick="openForm('caesar')">Caesar Cipher</a></li>
+            <li><a href="#" onclick="openForm('playfair')">Playfair Cipher</a></li>
+            <li><a href="#" onclick="openForm('railfence')">Railfence Cipher</a></li>
+            <li><a href="#" onclick="openForm('vigenere')">Vigenere Cipher</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    function openForm(type) {
+        fetch('/open-' + type)
+            .then(response => response.json())
+            .then(data => alert(data.status))
+            .catch(err => alert('Error: ' + err));
+    }
+</script>
+</html>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>998</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>360</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cipher Text:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtKey">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>220</y>
+      <width>551</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtPlaintext">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>110</y>
+      <width>551</width>
+      <height>87</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtCiphertext">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>330</y>
+      <width>551</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>220</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Key:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDecrypt">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>540</y>
+      <width>93</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Decrypt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>110</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Plain Text:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEncrypt">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>540</y>
+      <width>93</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Encrypt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>VIGENERE CIPHER LENGUYENGIAHUY_2280601154</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>998</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
